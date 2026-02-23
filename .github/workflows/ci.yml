@@ -2,7 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ "ci-workflow" ]   # keep this as your branch name for now
+    branches: [ "main" ]
+  pull_request:
+    branches: ["main"]   # keep this as your branch name for now
   workflow_dispatch:
 
 jobs:
